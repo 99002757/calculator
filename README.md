@@ -4,3 +4,4 @@
 ![cppcheck-action](https://github.com/99002757/calculator/workflows/cppcheck-action/badge.svg)
 ![CI](https://github.com/99002757/calculator/workflows/CI/badge.svg)
 ![Unit testing](https://github.com/99002757/calculator-main/workflows/Unit%20testing/badge.svg)
+![Valgrind](https://github.com/99002757/calculator-main/workflows/Valgrind/badge.svg)
