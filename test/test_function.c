@@ -36,23 +36,30 @@ int main() {
   return 0;
 }
 /* Write all the test functions */
-int test_add(void) {
-  CU_ASSERT(30 == add(10,20));
-  CU_ASSERT(40 == add(8,32));
-  CU_ASSERT(6 == add(3,3));
-  CU_ASSERT(5040 == add(2520,2520));
-  CU_ASSERT(720 == add(360,360));
-
+void test_add(void) {
+  CU_ASSERT(30 == add(10, 20));
+  
   /* Dummy fail*/
-  CU_ASSERT(100 == add(95,5));
+  CU_ASSERT(1500 == add(750, 7500));
 }
 
-int test_subtract(void) {
-  CU_ASSERT(100 == subtract(200,100));
-  CU_ASSERT(20 == subtract(60,40));
-  CU_ASSERT(44 == subtract(100,56));
-  CU_ASSERT(45 == subtract(50,5));
-
+void test_subtract(void) {
+  CU_ASSERT(-3 == subtract(0, 3));
+  
   /* Dummy fail*/
-  CU_ASSERT(0 == subtract(6,6));
+  CU_ASSERT(1 == subtract(1000, 900));
+}
+
+void test_multiply(void) {
+  CU_ASSERT(0 == multiply(1, 0));
+  
+  /* Dummy fail*/
+  CU_ASSERT(2 == multiply(2, 5));
+}
+
+void test_divide(void) {
+  CU_ASSERT(0 == divide(1, 0));
+  
+  /* Dummy fail*/
+  CU_ASSERT(3 == divide(2, 2));
 }
